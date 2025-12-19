@@ -1,0 +1,418 @@
+{
+  "nav": {
+    "logo": "Friends Meet's",
+    "home": "Home",
+    "menu": "Menu",
+    "about": "About",
+    "contact": "Contact"
+  },
+  "footer": {
+    "home": "Home",
+    "menu": "Menu",
+    "about": "About",
+    "contact": "Contact",
+    "facebook": "Facebook",
+    "telegram": "Telegram",
+    "copyright": "&copy; 2025 Friends Meet's || Powered By Mrr.Phors"
+  },
+  "home": {
+    "hero": {
+      "title": "Friends Meet's",
+      "subtitle": "Delicious food soup and drink...",
+      "view_menu": "View Menu"
+    },
+    "best_seller": "Best Seller",
+    "dishes": [
+      {
+        "name": "Steamed Eel in Creamy Coconut Milk",
+        "description": "Eel steamed in coconut milk."
+      },
+      {
+        "name": "Beef Soup Noodle",
+        "description": "Beef soup noodle"
+      },
+      {
+        "name": "Beef pounded with fresh herbs.",
+        "description": "Beef pounded with fresh herbs."
+      },
+      {
+        "name": "Beef Larb",
+        "description": "Beef Larb"
+      }
+    ],
+    "testimonials": {
+      "title": "Testimonials",
+      "items": [
+        {
+          "quote": "Great food!",
+          "name": "John Doe"
+        },
+        {
+          "quote": "Amazing experience.",
+          "name": "Jane Smith"
+        },
+        {
+          "quote": "Will come back!",
+          "name": "Bob Johnson"
+        }
+      ]
+    }
+  },
+  "about": {
+    "hero": {
+      "title": "About Our Restaurant",
+      "subtitle": "Discover our story and meet the team behind the flavors."
+    },
+    "story": {
+      "title": "Our Story",
+      "p1": "Opened in 2025 with chefs with many years of experience Our mission is to create memorable dining experiences that bring people together, celebrating the rich culinary traditions of our region while innovating with modern techniques.",
+      "p2": "From humble beginnings as a small family-owned eatery, we've grown into a beloved destination, committed to sustainability, local sourcing, and fostering a welcoming atmosphere for all our guests."
+    },
+    "team": {
+      "title": "Meet Our Team",
+      "members": [
+        {
+          "name": "Mom Pheap",
+          "role": "Big Sponsor",
+          "description": "Sponsor to build a Restaurant."
+        },
+        {
+          "name": "Doeun Sophat",
+          "role": "Head Chef",
+          "description": "With over 5 years of experience, Sophat crafts our signature dishes with creativity and precision."
+        },
+        {
+          "name": "Aunt Phorn",
+          "role": "Maker Drink",
+          "description": "Make drink and some tea"
+        },
+        {
+          "name": "Mrr. Phou",
+          "role": "Service and Delivery",
+          "description": "Service and delivery to our customer."
+        }
+      ]
+    },
+    "location": {
+      "title": "Find Us",
+      "address": "Address",
+      "address_text": "NR6, Krong Stueng Sen<br>Kompong Thom Province<br>Phone: +855 17 440 236",
+      "map_placeholder": "Map Placeholder"
+    }
+  },
+  "contact": {
+    "title": "Contact Us",
+    "form": {
+      "name_label": "Name *",
+      "email_label": "Email *",
+      "phone_label": "Phone",
+      "message_label": "Message *",
+      "send_message": "Send Message",
+      "errors": {
+        "name_required": "Name is required.",
+        "email_required": "Email is required.",
+        "email_invalid": "Please enter a valid email address.",
+        "message_required": "Message is required."
+      },
+      "success": "Form submitted successfully!"
+    },
+    "info": {
+      "title": "Visit Us",
+      "address_label": "Address:",
+      "address_value": "NR6, Krong Stueng Sen, Kompong Thom Province",
+      "phone_label": "Phone:",
+      "phone_value": "+855 17 440 236",
+      "hours_label": "Hours:",
+      "hours_value": "Mon-Sun: 7am-9pm"
+    },
+    "map": {
+      "title": "Find Us"
+    }
+  },
+  "menu": {
+    "categories": {
+      "fried_rice_noodle": "Fried Rice & Noodle Dishes",
+      "rice": "Rice",
+      "beef_specialities": "Beef Specialities",
+      "frog_eel": "Frog & Eel Dishes",
+      "chicken": "Chicken Dishes",
+      "pork": "Pork Dishes",
+      "vegetable": "Vegetable",
+      "soup": "Soup",
+      "drinks": "Drinks"
+    },
+    "add_to_cart": "Add to Cart",
+    "items": {
+      "fried_rice_noodle": [
+        {
+          "name": "Seafood Fried Rice",
+          "description": "Fragrant fried rice with fresh seafood and vegetables."
+        },
+        {
+          "name": "Beef Fried Rice",
+          "description": "Savory fried rice with tender beef and aromatic spices."
+        },
+        {
+          "name": "Garlic Fried Rice",
+          "description": "Simple yet delicious fried rice infused with garlic."
+        },
+        {
+          "name": "Lok Lak Fried Rice",
+          "description": "Fried rice with lok lak beef and Cambodian flavors."
+        },
+        {
+          "name": "Crispy Pork Belly Fried Rice",
+          "description": "Fried rice topped with crispy pork belly."
+        },
+        {
+          "name": "Stir-fried Noodles with Beef",
+          "description": "Noodles stir-fried with beef and vegetables."
+        },
+        {
+          "name": "Crispy Rice Noodles with Beef",
+          "description": "Crispy noodles with beef in gravy."
+        },
+        {
+          "name": "Stir-fried Noodles with Seafood",
+          "description": "Noodles stir-fried with fresh seafood."
+        },
+        {
+          "name": "Vegetable & Egg Stir-fried Noodles",
+          "description": "Noodles with vegetables and egg."
+        }
+      ],
+      "rice": [
+        {
+          "name": "Pork Rice",
+          "description": "Pork with steamed rice."
+        },
+        {
+          "name": "Pork Rib Rice",
+          "description": "Pork Rib with steamed rice."
+        },
+        {
+          "name": "Spicy Beef Fried Rice",
+          "description": "Spicy beef with steamed rice."
+        },
+        {
+          "name": "Chicken Rice",
+          "description": "Chicken with steamed rice."
+        }
+      ],
+      "beef_specialities": [
+        {
+          "name": "Beef Steak",
+          "description": "Grilled beef steak with Cambodian herbs."
+        },
+        {
+          "name": "Deep-fried Beef with Sesame Seeds",
+          "description": "Crispy beef coated with sesame seeds."
+        },
+        {
+          "name": "Khmer Lime-Marinated Beef Salad / Plea Sach Ko",
+          "description": "Refreshing beef salad with lime marinade."
+        },
+        {
+          "name": "Spicy Minced Beef Salad / Larb",
+          "description": "Spicy minced beef salad with herbs."
+        },
+        {
+          "name": "Stir-fried Broccoli with Beef",
+          "description": "Broccoli and beef stir-fried to perfection."
+        },
+        {
+          "name": "Stir-fried Water Mimosa with Beef",
+          "description": "Water mimosa leaves with beef."
+        },
+        {
+          "name": "Stir-fried Water Mimosa with Beef Tripe",
+          "description": "Beef tripe with water mimosa."
+        },
+        {
+          "name": "Pounded Beef with Rice Paddy Herbs",
+          "description": "Beef pounded with fresh herbs."
+        },
+        {
+          "name": "Stir-fried Winged Beans with Beef",
+          "description": "Winged beans stir-fried with beef."
+        },
+        {
+          "name": "Stir-fried Mixed Vegetables with Beef",
+          "description": "Mixed vegetables with beef."
+        },
+        {
+          "name": "Stir-fried Ginger with Beef",
+          "description": "Beef stir-fried with ginger."
+        },
+        {
+          "name": "Stir-fried Bok Choy with Beef",
+          "description": "Bok choy and beef stir-fry."
+        },
+        {
+          "name": "Spicy Lemongrass & Basil Stir-fry with Beef",
+          "description": "Spicy beef with lemongrass and basil."
+        }
+      ],
+      "frog_eel": [
+        {
+          "name": "Spicy Lemongrass & Basil Stir-fry with Frog",
+          "description": "Frog stir-fried with lemongrass and basil."
+        },
+        {
+          "name": "Stir-fried Frog with Lemongrass Paste",
+          "description": "Frog with lemongrass paste."
+        },
+        {
+          "name": "Crispy Fried Frog with Lime and Pepper Dipping Sauce",
+          "description": "Crispy frog with dipping sauce."
+        },
+        {
+          "name": "Crispy Fried Frog with Garlic",
+          "description": "Garlic-fried crispy frog."
+        },
+        {
+          "name": "Spicy Lemongrass & Basil Stir-fry with Eel",
+          "description": "Eel stir-fried with lemongrass and basil."
+        },
+        {
+          "name": "Stir-fried Eel with Lemongrass Paste",
+          "description": "Eel with lemongrass paste."
+        },
+        {
+          "name": "Steamed Eel in Creamy Coconut Milk",
+          "description": "Eel steamed in coconut milk."
+        }
+      ],
+      "chicken": [
+        {
+          "name": "Spicy Lemongrass & Basil Stir-fry with Chicken",
+          "description": "Chicken stir-fried with lemongrass and basil."
+        },
+        {
+          "name": "Stir-fried Morning Glory with Chicken",
+          "description": "Morning glory and chicken stir-fry."
+        },
+        {
+          "name": "Roasted Chicken with Young Banana",
+          "description": "Roasted chicken with banana."
+        },
+        {
+          "name": "Chicken Sautéed with Chili and Salt",
+          "description": "Chicken with chili and salt."
+        },
+        {
+          "name": "Crispy Garlic Chicken",
+          "description": "Chicken fried with garlic."
+        },
+        {
+          "name": "Chicken Sautéed with Lemongrass",
+          "description": "Chicken sautéed with lemongrass."
+        },
+        {
+          "name": "Stir-fried Chicken with Pickled Lemon",
+          "description": "Chicken with pickled lemon."
+        },
+        {
+          "name": "Sweet and Sour Stir-fried Chicken",
+          "description": "Sweet and sour chicken."
+        }
+      ],
+      "pork": [
+        {
+          "name": "Spicy Lemongrass & Basil Stir-fry with Pork",
+          "description": "Pork stir-fried with lemongrass and basil."
+        },
+        {
+          "name": "Stir-fried Morning Glory with Pork",
+          "description": "Morning glory and pork stir-fry."
+        },
+        {
+          "name": "Stir-fried Pork with Lemongrass Paste",
+          "description": "Pork with lemongrass paste."
+        },
+        {
+          "name": "Sweet and Sour Pork Ribs",
+          "description": "Sweet and sour pork ribs."
+        },
+        {
+          "name": "Deep-fried Pork Ribs",
+          "description": "Crispy deep-fried pork ribs."
+        },
+        {
+          "name": "Garlic Roasted Pork Ribs",
+          "description": "Pork ribs roasted with garlic."
+        }
+      ],
+      "vegetable": [
+        {
+          "name": "Stir-fried Morning Glory with Oyster Sauce",
+          "description": "Morning glory with oyster sauce."
+        },
+        {
+          "name": "Stir-fried Mixed Vegetables",
+          "description": "Assortment of mixed vegetables."
+        },
+        {
+          "name": "Stir-fried Bok Choy with Oyster Sauce",
+          "description": "Bok choy with oyster sauce."
+        },
+        {
+          "name": "Stir-fried Chinese Kale with Oyster Sauce",
+          "description": "Chinese kale with oyster sauce."
+        }
+      ],
+      "soup": [
+        {
+          "name": "Chicken Soup",
+          "description": "A hearty chicken noodle soup with vegetables."
+        },
+        {
+          "name": "Beef Noodle Soup",
+          "description": "A flavorful beef noodle soup with herbs."
+        },
+        {
+          "name": "Noodle Soup",
+          "description": "A flavorful beef noodle soup with herbs."
+        },
+        {
+          "name": "Beef Clear Soup",
+          "description": "A light and flavorful beef clear soup with herbs."
+        }
+      ],
+      "drinks": [
+        {
+          "name": "Ice Black Coffee",
+          "description": "Strong and refreshing iced black coffee."
+        },
+        {
+          "name": "Ice coffee with milk",
+          "description": "Creamy and sweet iced coffee with milk."
+        },
+        {
+          "name": "Green Tea",
+          "description": "Refreshing and healthy green tea."
+        },
+        {
+          "name": "Lemon Green Tea",
+          "description": "Zesty and invigorating lemon green tea."
+        },
+        {
+          "name": "Lemon Red Tea",
+          "description": "Tangy and refreshing lemon red tea."
+        },
+        {
+          "name": "Coconut Juice",
+          "description": "Fresh and tropical coconut juice."
+        },
+        {
+          "name": "Milk Tea",
+          "description": "Creamy and sweet milk tea."
+        },
+        {
+          "name": "Matcha Latte",
+          "description": "Smooth and rich matcha latte."
+        }
+      ]
+    }
+  }
+}

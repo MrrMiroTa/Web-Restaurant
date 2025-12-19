@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Dancing+Script:wght@400;700&family=Noto+Sans+Khmer&display=swap');
+
+/* CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Global Variables */
+:root {
+  --primary-color: #3cce29; /* Warm orange */
+  --secondary-color: #2d6c06; /* Red */
+  --accent-color: #f5f5dc; /* Cream */
+  --text-color: #333;
+  --background-color: #fff;
+  --shadow: rgba(0, 0, 0, 0.1);
+  --border-radius: 8px;
+  --spacing-small: 0.5rem;
+  --spacing-medium: 1rem;
+  --spacing-large: 2rem;
+  --font-family-body: 'Poppins', sans-serif;
+  --font-family-heading: 'Dancing Script', cursive;
+}
+
+/* Global Styles */
+body {
+  font-family: var(--font-family-body);
+  color: var(--text-color);
+  background-color: var(--background-color);
+  line-height: 1.6;
+}
+
+:lang(km) {
+  font-family: 'Noto Sans Khmer', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-family-heading);
+  margin-bottom: var(--spacing-medium);
+}
+
+p {
+  margin-bottom: var(--spacing-medium);
+}
+
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+  min-height: 44px; /* Touch-friendly */
+  display: inline-block;
+  padding: var(--spacing-small) var(--spacing-medium);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:focus {
+  outline: 2px solid var(--primary-color);
+  outline-offset: 2px;
+}
+
+button {
+  font-family: var(--font-family-body);
+  cursor: pointer;
+  border: none;
+  border-radius: var(--border-radius);
+  padding: var(--spacing-medium);
+  background-color: var(--primary-color);
+  color: white;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  min-height: 44px; /* Touch-friendly */
+}
+
+button:hover {
+  background-color: var(--secondary-color);
+  transform: translateY(-2px);
+}
+
+button:focus {
+  outline: 2px solid var(--primary-color);
+  outline-offset: 2px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-medium);
+}
+
+.section {
+  padding: var(--spacing-large) 0;
+  animation: fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+img {
+  transition: filter 0.3s ease;
+}
+
+img.loading {
+  filter: blur(5px);
+}
+
+/* Responsive Design - Mobile First */
+@media (min-width: 768px) {
+  .container {
+    padding: 0 var(--spacing-large);
+  }
+
+  .section {
+    padding: var(--spacing-large) 0;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    padding: 0 var(--spacing-large);
+  }
+}

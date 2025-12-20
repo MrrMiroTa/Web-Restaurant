@@ -21,7 +21,7 @@
         <h3 class="item-name">{{ item.name }}</h3>
         <p class="item-description">{{ item.description }}</p>
         <p class="item-price">${{ item.price }}</p>
-        <button class="add-to-cart-btn">{{ $t('menu.add_to_cart') }}</button>
+        <button class="add-to-cart-btn" @click="addToCart(item)">{{ $t('menu.add_to_cart') }}</button>
       </div>
     </div>
   </div>
@@ -30,6 +30,7 @@
 <script>
 export default {
   name: 'Menu',
+  inject: ['addToCart'],
   data() {
     return {
       activeCategory: 'fried_rice_noodle'

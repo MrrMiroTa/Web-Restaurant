@@ -7,6 +7,12 @@
       <li><router-link to="/about" @click="closeMenu">{{ $t('nav.about') }}</router-link></li>
       <li><router-link to="/contact" @click="closeMenu">{{ $t('nav.contact') }}</router-link></li>
       <li><button @click="toggleLanguage" class="lang-switch">{{ i18n.locale === 'en' ? 'KM' : 'EN' }}</button></li>
+      <li class="cart-icon" @click="toggleCart">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M17,18C15.89,18 15,18.89 15,20A2,2 0 0,0 17,22A2,2 0 0,0 19,20C19,18.89 18.1,18 17,18M1,2V4H3L6.6,11.59L5.24,14.04C5.09,14.32 5,14.65 5,15A2,2 0 0,0 7,17H19V15H7.42A0.25,0.25 0 0,1 7.17,14.75C7.17,14.7 7.18,14.66 7.2,14.63L8.1,13H15.55C16.3,13 16.96,12.58 17.3,11.97L20.88,5.5C20.95,5.34 21,5.17 21,5A1,1 0 0,0 20,4H5.21L4.27,2M7,18C5.89,18 5,18.89 5,20A2,2 0 0,0 7,22A2,2 0 0,0 9,20C9,18.89 8.1,18 7,18Z" fill="white"/>
+        </svg>
+        <span v-if="cart.length" class="cart-count">{{ cart.length }}</span>
+      </li>
     </ul>
     <button class="hamburger" @click="toggleMenu" v-show="isMobile">
       <span></span>
@@ -14,17 +20,23 @@
       <span></span>
     </button>
   </nav>
+  <Cart v-model="isCartOpen" />
 </template>
 
 <script setup>
-import { ref, onMounted, onBeforeUnmount } from 'vue'
+import { ref, onMounted, onBeforeUnmount, inject } from 'vue'
 import { useI18n } from 'vue-i18n'
+import Cart from './Cart.vue'
 
 const { t, locale: i18nLocale } = useI18n()
 const i18n = { locale: i18nLocale }
 
+// Inject cart state
+const cart = inject('cart')
+
 const isMenuOpen = ref(false)
 const isMobile = ref(false)
+const isCartOpen = ref(false)
 
 const toggleMenu = () => {
   isMenuOpen.value = !isMenuOpen.value
@@ -43,6 +55,10 @@ const toggleLanguage = () => {
   console.log('Current locale:', i18n.locale.value)
   i18n.locale.value = i18n.locale.value === 'en' ? 'km' : 'en'
   console.log('New locale:', i18n.locale.value)
+}
+
+const toggleCart = () => {
+  isCartOpen.value = !isCartOpen.value
 }
 
 onMounted(() => {
@@ -116,6 +132,40 @@ nav {
 
 .lang-switch:hover {
   background-color: rgba(255, 255, 255, 0.2);
+}
+
+.cart-icon {
+  position: relative;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  padding: var(--spacing-small) var(--spacing-medium);
+  border-radius: var(--border-radius);
+  transition: background-color 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cart-icon:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.cart-count {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  background-color: var(--accent-color);
+  color: var(--primary-color);
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8rem;
+  font-weight: bold;
 }
 
 .hamburger {

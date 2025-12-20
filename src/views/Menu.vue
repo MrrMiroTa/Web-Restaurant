@@ -28,63 +28,6 @@
 </template>
 
 <script>
-// Import all menu item images
-import friedrice from '../assets/friedrice.jpg'
-import beeffriedrice from '../assets/beeffriedrice.jpg'
-import grilicfriedrice from '../assets/grilicfriedrice.jpg'
-import loklak from '../assets/loklak.jpg'
-import noodlevetget from '../assets/noodlevetget.jpg'
-import Micha from '../assets/Micha.jpg'
-import seafoodnoodle from '../assets/seafoodnoodle.jpg'
-import porkrice from '../assets/porkrice.jpg'
-import porkribrice from '../assets/porkribrice.jpg'
-import phatkaphao from '../assets/phatkaphao.jpg'
-import chickenrice from '../assets/chickenrice.jpg'
-import beefsteak from '../assets/beefsteak.jpg'
-import crispybeef from '../assets/crispybeef.jpg'
-import beefsalad from '../assets/beefsalad.jpg'
-import beeflab from '../assets/beeflab.jpg'
-import beef from '../assets/beef.jpg'
-import mimosa from '../assets/mimosa.jpg'
-import beefherb from '../assets/beefherb.jpg'
-import ppeay from '../assets/ppeay.jpg'
-import beefginger from '../assets/beefginger.jpg'
-import bokchoy from '../assets/bokchoy.jpg'
-import beefstirfrieds from '../assets/beefstirfrieds.jpg'
-import frogfried from '../assets/frogfried.jpg'
-import friedfrog from '../assets/friedfrog.jpg'
-import eelstir from '../assets/eelstir.jpg'
-import friedeel from '../assets/friedeel.jpg'
-import antongob from '../assets/antongob.png'
-import stirchik from '../assets/stirchik.jpg'
-import trokunchik from '../assets/trokunchik.jpg'
-import bananachik from '../assets/bananachik.jpg'
-import chilisaltchik from '../assets/chilisaltchik.jpg'
-import garlicchik from '../assets/garlicchik.jpg'
-import chiken from '../assets/chiken.jpg'
-import chikenngamngov from '../assets/chikenngamngov.jpg'
-import porkstir from '../assets/porkstir.jpg'
-import trokunpork from '../assets/trokunpork.jpg'
-import kroeungbeef from '../assets/kroeungbeef.jpg'
-import sweetporkrib from '../assets/sweetporkrib.jpg'
-import prokfried from '../assets/prokfried.jpg'
-import garlicporkrib from '../assets/garlicporkrib.jpg'
-import trokun from '../assets/trokun.jpg'
-import vetgetfried from '../assets/vetgetfried.jpg'
-import bokchoyvetget from '../assets/bokchoyvetget.jpg'
-import brocoli from '../assets/brocoli.jpg'
-import chikensoup from '../assets/chikensoup.jpg'
-import kuyteav from '../assets/kuyteav.jpg'
-import noodlesoup from '../assets/noodlesoup.jpg'
-import beefclearsoup from '../assets/beefclearsoup.jpg'
-import blackcoffee from '../assets/drink/blackcoffee.png'
-import coffeemilk from '../assets/drink/coffeemilk.png'
-import greentea from '../assets/drink/greentea.png'
-import lemontea from '../assets/drink/lemontea.png'
-import coco from '../assets/drink/coco.jpg'
-import milktea from '../assets/drink/milktea.png'
-import matcha from '../assets/drink/matcha.avif'
-
 export default {
   name: 'Menu',
   data() {
@@ -103,55 +46,55 @@ export default {
               name: this.$t('menu.items.fried_rice_noodle.0.name'),
               description: this.$t('menu.items.fried_rice_noodle.0.description'),
               price: 2.00,
-              image: friedrice
+              image: '/assets/friedrice.jpg'
             },
             {
               name: this.$t('menu.items.fried_rice_noodle.1.name'),
               description: this.$t('menu.items.fried_rice_noodle.1.description'),
               price: 1.50,
-              image: beeffriedrice
+              image: '/assets/beeffriedrice.jpg'
             },
             {
               name: this.$t('menu.items.fried_rice_noodle.2.name'),
               description: this.$t('menu.items.fried_rice_noodle.2.description'),
               price: 1.25,
-              image: grilicfriedrice
+              image: '/assets/grilicfriedrice.jpg'
             },
             {
               name: this.$t('menu.items.fried_rice_noodle.3.name'),
               description: this.$t('menu.items.fried_rice_noodle.3.description'),
               price: 1.75,
-              image: loklak
+              image: '/assets/loklak.jpg'
             },
             {
               name: this.$t('menu.items.fried_rice_noodle.4.name'),
               description: this.$t('menu.items.fried_rice_noodle.4.description'),
               price: 1.75,
-              image: beeffriedrice
+              image: '/assets/beeffriedrice.jpg'
             },
             {
               name: this.$t('menu.items.fried_rice_noodle.5.name'),
               description: this.$t('menu.items.fried_rice_noodle.5.description'),
               price: 1.50,
-              image: noodlevetget
+              image: '/assets/noodlevetget.jpg'
             },
             {
               name: this.$t('menu.items.fried_rice_noodle.6.name'),
               description: this.$t('menu.items.fried_rice_noodle.6.description'),
               price: 1.50,
-              image: Micha
+              image: '/assets/Micha.jpg'
             },
             {
               name: this.$t('menu.items.fried_rice_noodle.7.name'),
               description: this.$t('menu.items.fried_rice_noodle.7.description'),
               price: 2.00,
-              image: seafoodnoodle
+              image: '/assets/seafoodnoodle.jpg'
             },
             {
               name: this.$t('menu.items.fried_rice_noodle.8.name'),
               description: this.$t('menu.items.fried_rice_noodle.8.description'),
               price: 1.25,
-              image: noodlevetget
+              image: '/assets/noodlevetget.jpg'
             }
           ]
         },
@@ -163,25 +106,25 @@ export default {
               name: this.$t('menu.items.rice.0.name'),
               description: this.$t('menu.items.rice.0.description'),
               price: 1.25,
-              image: porkrice
+              image: '/assets/porkrice.jpg'
             },
             {
               name: this.$t('menu.items.rice.1.name'),
               description: this.$t('menu.items.rice.1.description'),
               price: 1.25,
-              image: porkribrice
+              image: '/assets/porkribrice.jpg'
             },
             {
               name: this.$t('menu.items.rice.2.name'),
               description: this.$t('menu.items.rice.2.description'),
               price: 2.00,
-              image: phatkaphao
+              image: '/assets/phatkaphao.jpg'
             },
             {
               name: this.$t('menu.items.rice.3.name'),
               description: this.$t('menu.items.rice.3.description'),
               price: 1.25,
-              image: chickenrice
+              image: '/assets/chickenrice.jpg'
             }
           ]
         },
@@ -193,79 +136,79 @@ export default {
               name: this.$t('menu.items.beef_specialities.0.name'),
               description: this.$t('menu.items.beef_specialities.0.description'),
               price: 3.75,
-              image: beefsteak
+              image: '/assets/beefsteak.jpg'
             },
             {
               name: this.$t('menu.items.beef_specialities.1.name'),
               description: this.$t('menu.items.beef_specialities.1.description'),
               price: 2.50,
-              image: crispybeef
+              image: '/assets/crispybeef.jpg'
             },
             {
               name: this.$t('menu.items.beef_specialities.2.name'),
               description: this.$t('menu.items.beef_specialities.2.description'),
               price: 2.50,
-              image: beefsalad
+              image: '/assets/beefsalad.jpg'
             },
             {
               name: this.$t('menu.items.beef_specialities.3.name'),
               description: this.$t('menu.items.beef_specialities.3.description'),
               price: 2.50,
-              image: beeflab
+              image: '/assets/beeflab.jpg'
             },
             {
               name: this.$t('menu.items.beef_specialities.4.name'),
               description: this.$t('menu.items.beef_specialities.4.description'),
               price: 2.50,
-              image: beef
+              image: '/assets/beef.jpg'
             },
             {
               name: this.$t('menu.items.beef_specialities.5.name'),
               description: this.$t('menu.items.beef_specialities.5.description'),
               price: 2.50,
-              image: mimosa
+              image: '/assets/mimosa.jpg'
             },
             {
               name: this.$t('menu.items.beef_specialities.6.name'),
               description: this.$t('menu.items.beef_specialities.6.description'),
               price: 2.50,
-              image: mimosa
+              image: '/assets/mimosa.jpg'
             },
             {
               name: this.$t('menu.items.beef_specialities.7.name'),
               description: this.$t('menu.items.beef_specialities.7.description'),
               price: 2.50,
-              image: beefherb
+              image: '/assets/beefherb.jpg'
             },
             {
               name: this.$t('menu.items.beef_specialities.8.name'),
               description: this.$t('menu.items.beef_specialities.8.description'),
               price: 2.50,
-              image: ppeay
+              image: '/assets/ppeay.jpg'
             },
             {
               name: this.$t('menu.items.beef_specialities.9.name'),
               description: this.$t('menu.items.beef_specialities.9.description'),
               price: 2.50,
-              image: beef
+              image: '/assets/beef.jpg'
             },
             {
               name: this.$t('menu.items.beef_specialities.10.name'),
               description: this.$t('menu.items.beef_specialities.10.description'),
               price: 2.50,
-              image: beefginger
+              image: '/assets/beefginger.jpg'
             },
             {
               name: this.$t('menu.items.beef_specialities.11.name'),
               description: this.$t('menu.items.beef_specialities.11.description'),
               price: 2.50,
-              image: bokchoy
+              image: '/assets/bokchoy.jpg'
             },
             {
               name: this.$t('menu.items.beef_specialities.12.name'),
               description: this.$t('menu.items.beef_specialities.12.description'),
               price: 2.50,
-              image: beefstirfrieds
+              image: '/assets/beefstirfrieds.jpg'
             }
           ]
         },
@@ -277,43 +220,43 @@ export default {
               name: this.$t('menu.items.frog_eel.0.name'),
               description: this.$t('menu.items.frog_eel.0.description'),
               price: 2.50,
-              image: frogfried
+              image: '/assets/frogfried.jpg'
             },
             {
               name: this.$t('menu.items.frog_eel.1.name'),
               description: this.$t('menu.items.frog_eel.1.description'),
               price: 2.50,
-              image: frogfried
+              image: '/assets/frogfried.jpg'
             },
             {
               name: this.$t('menu.items.frog_eel.2.name'),
               description: this.$t('menu.items.frog_eel.2.description'),
               price: 2.50,
-              image: friedfrog
+              image: '/assets/friedfrog.jpg'
             },
             {
               name: this.$t('menu.items.frog_eel.3.name'),
               description: this.$t('menu.items.frog_eel.3.description'),
               price: 2.50,
-              image: friedfrog
+              image: '/assets/friedfrog.jpg'
             },
             {
               name: this.$t('menu.items.frog_eel.4.name'),
               description: this.$t('menu.items.frog_eel.4.description'),
               price: 2.50,
-              image: eelstir
+              image: '/assets/eelstir.jpg'
             },
             {
               name: this.$t('menu.items.frog_eel.5.name'),
               description: this.$t('menu.items.frog_eel.5.description'),
               price: 2.509,
-              image: friedeel
+              image: '/assets/friedeel.jpg'
             },
             {
               name: this.$t('menu.items.frog_eel.6.name'),
               description: this.$t('menu.items.frog_eel.6.description'),
               price: 3.50,
-              image: antongob
+              image: '/assets/antongob.png'
             }
           ]
         },
@@ -325,49 +268,49 @@ export default {
               name: this.$t('menu.items.chicken.0.name'),
               description: this.$t('menu.items.chicken.0.description'),
               price: 2.50,
-              image: stirchik
+              image: '/assets/stirchik.jpg'
             },
             {
               name: this.$t('menu.items.chicken.1.name'),
               description: this.$t('menu.items.chicken.1.description'),
               price: 2.50,
-              image: trokunchik
+              image: '/assets/trokunchik.jpg'
             },
             {
               name: this.$t('menu.items.chicken.2.name'),
               description: this.$t('menu.items.chicken.2.description'),
               price: 2.50,
-              image: bananachik
+              image: '/assets/bananachik.jpg'
             },
             {
               name: this.$t('menu.items.chicken.3.name'),
               description: this.$t('menu.items.chicken.3.description'),
               price: 2.50,
-              image: chilisaltchik
+              image: '/assets/chilisaltchik.jpg'
             },
             {
               name: this.$t('menu.items.chicken.4.name'),
               description: this.$t('menu.items.chicken.4.description'),
               price: 2.50,
-              image: garlicchik
+              image: '/assets/garlicchik.jpg'
             },
             {
               name: this.$t('menu.items.chicken.5.name'),
               description: this.$t('menu.items.chicken.5.description'),
               price: 2.50,
-              image: chiken
+              image: '/assets/chiken.jpg'
             },
             {
               name: this.$t('menu.items.chicken.6.name'),
               description: this.$t('menu.items.chicken.6.description'),
               price: 2.50,
-              image: chikenngamngov
+              image: '/assets/chikenngamngov.jpg'
             },
             {
               name: this.$t('menu.items.chicken.7.name'),
               description: this.$t('menu.items.chicken.7.description'),
               price: 2.50,
-              image: garlicchik
+              image: '/assets/garlicchik.jpg'
             }
           ]
         },
@@ -379,37 +322,37 @@ export default {
               name: this.$t('menu.items.pork.0.name'),
               description: this.$t('menu.items.pork.0.description'),
               price: 2.50,
-              image: porkstir
+              image: '/assets/porkstir.jpg'
             },
             {
               name: this.$t('menu.items.pork.1.name'),
               description: this.$t('menu.items.pork.1.description'),
               price: 2.50,
-              image: trokunpork
+              image: '/assets/trokunpork.jpg'
             },
             {
               name: this.$t('menu.items.pork.2.name'),
               description: this.$t('menu.items.pork.2.description'),
               price: 2.50,
-              image: kroeungbeef
+              image: '/assets/kroeungbeef.jpg'
             },
             {
               name: this.$t('menu.items.pork.3.name'),
               description: this.$t('menu.items.pork.3.description'),
               price: 2.50,
-              image: sweetporkrib
+              image: '/assets/sweetporkrib.jpg'
             },
             {
               name: this.$t('menu.items.pork.4.name'),
               description: this.$t('menu.items.pork.4.description'),
               price: 2.50,
-              image: prokfried
+              image: '/assets/prokfried.jpg'
             },
             {
               name: this.$t('menu.items.pork.5.name'),
               description: this.$t('menu.items.pork.5.description'),
               price: 2.50,
-              image: garlicporkrib
+              image: '/assets/garlicporkrib.jpg'
             }
           ]
         },
@@ -421,25 +364,25 @@ export default {
               name: this.$t('menu.items.vegetable.0.name'),
               description: this.$t('menu.items.vegetable.0.description'),
               price: 1.25,
-              image: trokun
+              image: '/assets/trokun.jpg'
             },
             {
               name: this.$t('menu.items.vegetable.1.name'),
               description: this.$t('menu.items.vegetable.1.description'),
               price: 1.25,
-              image: vetgetfried
+              image: '/assets/vetgetfried.jpg'
             },
             {
               name: this.$t('menu.items.vegetable.2.name'),
               description: this.$t('menu.items.vegetable.2.description'),
               price: 1.25,
-              image: bokchoyvetget
+              image: '/assets/bokchoyvetget.jpg'
             },
             {
               name: this.$t('menu.items.vegetable.3.name'),
               description: this.$t('menu.items.vegetable.3.description'),
               price: 1.25,
-              image: brocoli
+              image: '/assets/brocoli.jpg'
             }
           ]
         },
@@ -451,25 +394,25 @@ export default {
               name: this.$t('menu.items.soup.0.name'),
               description: this.$t('menu.items.soup.0.description'),
               price: 2.50,
-              image: chikensoup
+              image: '/assets/chikensoup.jpg'
             },
             {
               name: this.$t('menu.items.soup.1.name'),
               description: this.$t('menu.items.soup.1.description'),
               price: 2.50,
-              image: kuyteav
+              image: '/assets/kuyteav.jpg'
             },
             {
               name: this.$t('menu.items.soup.2.name'),
               description: this.$t('menu.items.soup.2.description'),
               price: 1.25,
-              image: noodlesoup
+              image: '/assets/noodlesoup.jpg'
             },
             {
               name: this.$t('menu.items.soup.3.name'),
               description: this.$t('menu.items.soup.3.description'),
               price: 1.25,
-              image: beefclearsoup
+              image: '/assets/beefclearsoup.jpg'
             }
           ]
         },
@@ -481,49 +424,49 @@ export default {
               name: this.$t('menu.items.drinks.0.name'),
               description: this.$t('menu.items.drinks.0.description'),
               price: 0.63,
-              image: blackcoffee
+              image: '/assets/drink/blackcoffee.png'
             },
             {
               name: this.$t('menu.items.drinks.1.name'),
               description: this.$t('menu.items.drinks.1.description'),
               price: 0.63,
-              image: coffeemilk
+              image: '/assets/drink/coffeemilk.png'
             },
             {
               name: this.$t('menu.items.drinks.2.name'),
               description: this.$t('menu.items.drinks.2.description'),
               price: 0.63,
-              image: greentea
+              image: '/assets/drink/greentea.png'
             },
             {
               name: this.$t('menu.items.drinks.3.name'),
               description: this.$t('menu.items.drinks.3.description'),
               price: 0.63,
-              image: lemontea
+              image: '/assets/drink/lemontea.png'
             },
             {
               name: this.$t('menu.items.drinks.4.name'),
               description: this.$t('menu.items.drinks.4.description'),
               price: 0.63,
-              image: lemontea
+              image: '/assets/drink/lemontea.png'
             },
             {
               name: this.$t('menu.items.drinks.5.name'),
               description: this.$t('menu.items.drinks.5.description'),
               price: 0.88,
-              image: coco
+              image: '/assets/drink/coco.jpg'
             },
             {
               name: this.$t('menu.items.drinks.6.name'),
               description: this.$t('menu.items.drinks.6.description'),
               price: 0.75,
-              image: milktea
+              image: '/assets/drink/milktea.png'
             },
             {
               name: this.$t('menu.items.drinks.7.name'),
               description: this.$t('menu.items.drinks.7.description'),
               price: 0.88,
-              image: matcha
+              image: '/assets/drink/matcha.avif'
             }
           ]
         }

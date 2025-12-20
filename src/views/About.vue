@@ -1,7 +1,7 @@
 <template>
   <div class="about">
     <!-- Hero Image Section -->
-    <section class="hero">
+    <section class="hero" :style="{ background: `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(${heroImage}) no-repeat center center`, backgroundSize: 'cover' }">
       <div class="hero-content">
         <h1>{{ $t('about.hero.title') }}</h1>
         <p>{{ $t('about.hero.subtitle') }}</p>
@@ -58,6 +58,13 @@
 </template>
 
 <script>
+// Import images
+import heroImage from '../assets/3342857.jpg'
+import bigImg from '../assets/members/big.jpg'
+import headImg from '../assets/members/head.jpg'
+import auntImg from '../assets/members/aunt.jpg'
+import phouImg from '../assets/members/phou.jpg'
+
 export default {
   name: 'About',
   computed: {
@@ -67,25 +74,25 @@ export default {
           name: this.$t('about.team.members.0.name'),
           role: this.$t('about.team.members.0.role'),
           description: this.$t('about.team.members.0.description'),
-          photo: '/src/assets/members/big.jpg'
+          photo: bigImg
         },
         {
           name: this.$t('about.team.members.1.name'),
           role: this.$t('about.team.members.1.role'),
           description: this.$t('about.team.members.1.description'),
-          photo: '/src/assets/members/head.jpg'
+          photo: headImg
         },
         {
           name: this.$t('about.team.members.2.name'),
           role: this.$t('about.team.members.2.role'),
           description: this.$t('about.team.members.2.description'),
-          photo: '/src/assets/members/aunt.jpg'
+          photo: auntImg
         },
         {
           name: this.$t('about.team.members.3.name'),
           role: this.$t('about.team.members.3.role'),
           description: this.$t('about.team.members.3.description'),
-          photo: '/src/assets/members/phou.jpg'
+          photo: phouImg
         }
       ]
     }
@@ -100,8 +107,6 @@ export default {
 }
 
 .hero {
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('/src/assets/3342857.jpg') no-repeat center center;
-  background-size: cover;
   height: 50vh;
   display: flex;
   align-items: center;

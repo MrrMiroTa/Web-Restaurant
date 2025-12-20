@@ -4,6 +4,7 @@ import en from './locales/en.json'
 import km from './locales/km.json'
 
 const i18n = createI18n({
+  legacy: false,
   locale: 'en',
   fallbackLocale: 'en',
   messages: {

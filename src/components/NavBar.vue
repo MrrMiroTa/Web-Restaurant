@@ -6,7 +6,7 @@
       <li><router-link to="/menu" @click="closeMenu">{{ $t('nav.menu') }}</router-link></li>
       <li><router-link to="/about" @click="closeMenu">{{ $t('nav.about') }}</router-link></li>
       <li><router-link to="/contact" @click="closeMenu">{{ $t('nav.contact') }}</router-link></li>
-      <li><button @click="toggleLanguage" class="lang-switch">{{ $i18n.locale === 'en' ? 'KM' : 'EN' }}</button></li>
+      <li><button @click="toggleLanguage" class="lang-switch">{{ i18n.locale === 'en' ? 'KM' : 'EN' }}</button></li>
     </ul>
     <button class="hamburger" @click="toggleMenu" v-show="isMobile">
       <span></span>
@@ -16,37 +16,43 @@
   </nav>
 </template>
 
-<script>
-export default {
-  data() {
-    return {
-      isMenuOpen: false,
-      isMobile: false
-    }
-  },
-  mounted() {
-    this.checkMobile();
-    window.addEventListener('resize', this.checkMobile);
-  },
-  beforeUnmount() {
-    window.removeEventListener('resize', this.checkMobile);
-  },
-  methods: {
-    toggleMenu() {
-      this.isMenuOpen = !this.isMenuOpen;
-    },
-    closeMenu() {
-      this.isMenuOpen = false;
-    },
-    checkMobile() {
-      this.isMobile = window.innerWidth <= 768;
-      if (!this.isMobile) this.isMenuOpen = false;
-    },
-    toggleLanguage() {
-      this.$i18n.locale = this.$i18n.locale === 'en' ? 'km' : 'en';
-    }
-  }
+<script setup>
+import { ref, onMounted, onBeforeUnmount } from 'vue'
+import { useI18n } from 'vue-i18n'
+
+const { t, locale: i18nLocale } = useI18n()
+const i18n = { locale: i18nLocale }
+
+const isMenuOpen = ref(false)
+const isMobile = ref(false)
+
+const toggleMenu = () => {
+  isMenuOpen.value = !isMenuOpen.value
 }
+
+const closeMenu = () => {
+  isMenuOpen.value = false
+}
+
+const checkMobile = () => {
+  isMobile.value = window.innerWidth <= 768
+  if (!isMobile.value) isMenuOpen.value = false
+}
+
+const toggleLanguage = () => {
+  console.log('Current locale:', i18n.locale.value)
+  i18n.locale.value = i18n.locale.value === 'en' ? 'km' : 'en'
+  console.log('New locale:', i18n.locale.value)
+}
+
+onMounted(() => {
+  checkMobile()
+  window.addEventListener('resize', checkMobile)
+})
+
+onBeforeUnmount(() => {
+  window.removeEventListener('resize', checkMobile)
+})
 </script>
 
 <style scoped>

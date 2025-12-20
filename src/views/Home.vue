@@ -31,15 +31,19 @@
 </template>
 
 <script>
+  import antongobImg from '../assets/antongob.png'
+  import kuyteavImg from '../assets/kuyteav.jpg'
+  import beefherbImg from '../assets/beefherb.jpg'
+  import beeflabImg from '../assets/beeflab.jpg'
 export default {
   name: 'Home',
   computed: {
     dishes() {
       return [
-        { id: 1, name: this.$t('home.dishes.0.name'), description: this.$t('home.dishes.0.description'), image: '/src/assets/antongob.png' },
-        { id: 2, name: this.$t('home.dishes.1.name'), description: this.$t('home.dishes.1.description'), image: '/src/assets/kuyteav.jpg' },
-        { id: 3, name: this.$t('home.dishes.2.name'), description: this.$t('home.dishes.2.description'), image: '/src/assets/beefherb.jpg' },
-        { id: 4, name: this.$t('home.dishes.3.name'), description: this.$t('home.dishes.3.description'), image: '/src/assets/beeflab.jpg' }
+        { id: 1, name: this.$t('home.dishes.0.name'), description: this.$t('home.dishes.0.description'), image: antongobImg },
+        { id: 2, name: this.$t('home.dishes.1.name'), description: this.$t('home.dishes.1.description'), image: kuyteavImg },
+        { id: 3, name: this.$t('home.dishes.2.name'), description: this.$t('home.dishes.2.description'), image: beefherbImg },
+        { id: 4, name: this.$t('home.dishes.3.name'), description: this.$t('home.dishes.3.description'), image: beeflabImg }
       ]
     },
     testimonials() {

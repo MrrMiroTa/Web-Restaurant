@@ -1,5 +1,7 @@
+
+
 <template>
-  <div class="contact">
+  <div class="contact" :style="{ backgroundImage: `url(${bgImage})`, backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }">
     <h1>{{ $t('contact.title') }}</h1>
 
     <!-- Contact Form -->
@@ -55,6 +57,7 @@
 <script setup>
 import { ref, reactive, computed } from 'vue'
 import { useI18n } from 'vue-i18n'
+import bgImage from '../assets/bg.png'
 
 const { t } = useI18n()
 

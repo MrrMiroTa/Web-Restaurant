@@ -11,7 +11,7 @@
         <a href="https://www.facebook.com/share/1C7uknxT1J/" target="_blank" rel="noopener noreferrer"><span>{{ $t('footer.facebook') }}</span></a>
         <a href="https://t.me/chefphat" target="_blank" rel="noopener noreferrer"><span>{{ $t('footer.telegram') }}</span></a>
       </div>
-      <p>{{ $t('footer.copyright') }}</p>
+      <p>&copy 2025 Friends Meet's | Powered By <a href="https://t.me/DoeunSoPhors" target="_blank" rel="noopener noreferrer" style="color: white ;">Mrr. Phors</a></p>
     </div>
   </footer>
 </template>

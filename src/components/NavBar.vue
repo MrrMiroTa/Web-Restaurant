@@ -1,6 +1,6 @@
 <template>
   <nav>
-    <div class="logo">{{ $t('nav.logo') }}</div>
+    <router-link to="/"><div class="logo">{{ $t('nav.logo') }}</div></router-link>
     <ul class="nav-links" :class="{ active: isMenuOpen }" v-show="isMenuOpen || !isMobile">
       <li><router-link to="/" @click="closeMenu">{{ $t('nav.home') }}</router-link></li>
       <li><router-link to="/menu" @click="closeMenu">{{ $t('nav.menu') }}</router-link></li>

@@ -2,7 +2,7 @@
   <div class="home">
     <!-- Hero Section -->
     <section class="hero">
-      <h1>{{ $t('home.hero.title') }}</h1>
+     <h1>{{ $t('home.hero.title') }}</h1>
       <p>{{ $t('home.hero.subtitle') }}</p>
       <router-link to="/menu" class="btn">{{ $t('home.hero.view_menu') }}</router-link>
     </section>

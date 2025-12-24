@@ -140,7 +140,7 @@ nav {
   border: none;
   color: white;
   cursor: pointer;
-  padding: var(--spacing-small) var(--spacing-medium);
+  padding: var(--spacing-small);
   border-radius: var(--border-radius);
   transition: background-color 0.3s ease;
   display: flex;

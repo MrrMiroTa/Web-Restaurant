@@ -2,6 +2,7 @@
 import { ref, provide } from 'vue'
 import NavBar from './components/NavBar.vue'
 import Footer from './components/Footer.vue'
+import { Analytics } from "@vercel/analytics/next"
 
 // Reactive cart state
 const cart = ref([])
@@ -31,5 +32,6 @@ provide('clearCart', clearCart)
 <template>
   <NavBar />
   <router-view />
+  <Analytics />
   <Footer />
 </template>

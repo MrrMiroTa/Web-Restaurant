@@ -2,7 +2,7 @@
 import { ref, provide } from 'vue'
 import NavBar from './components/NavBar.vue'
 import Footer from './components/Footer.vue'
-import { Analytics } from "@vercel/analytics/next"
+// import { Analytics } from "@vercel/analytics"
 
 // Reactive cart state
 const cart = ref([])

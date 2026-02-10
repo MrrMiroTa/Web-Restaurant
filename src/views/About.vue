@@ -111,7 +111,7 @@ export default {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: white;
+  color: rgb(236, 236, 236);
   text-align: center;
   position: relative;
 }
